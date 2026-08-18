@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; form-action 'none'" />
+  <title>Akash CSC Tools — 250+ Digital Tools</title>
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#" aria-label="Home"><span class="logo">A</span><span><b>Akash CSC Tools</b><small>CSC • Digital Seva • 250+ Tools</small></span></a><div class="header-actions"><button id="favoritesBtn" class="ghost" type="button">★ पसंदीदा <span id="favCount">0</span></button><button id="themeBtn" class="icon-btn" type="button" aria-label="थीम बदलें">☾</button></div></header>
+  <main>
+    <section class="hero"><div><span class="eyebrow">CSC OPERATORS के लिए ALL-IN-ONE APP</span><h1>हर काम का सही टूल,<br><em>एक ही जगह पर</em></h1><p>सरकारी सेवा, PDF, फोटो, शिक्षा, बैंकिंग, AI, Canva, GitHub और रोज़मर्रा के 250+ verified shortcuts.</p></div><div class="search-wrap"><label for="search">टूल खोजें</label><div class="searchbox"><span>⌕</span><input id="search" autocomplete="off" placeholder="जैसे Aadhaar, PAN, PDF, Photo…"/><kbd>Ctrl K</kbd></div><div id="quickSearch" class="quick"></div></div></section>
+    <section class="stats" aria-label="सारांश"><div><strong id="totalCount">250+</strong><span>कुल टूल</span></div><div><strong id="categoryCount">0</strong><span>कैटेगरी</span></div><div><strong>1 क्लिक</strong><span>तेज़ ओपन</span></div><div><strong>100%</strong><span>साफ इंटरफेस</span></div></section>
+    <section class="content"><nav id="categories" class="categories" aria-label="टूल कैटेगरी"></nav><div class="section-head"><div><p id="resultMeta">सभी सेवाएँ</p><h2 id="resultTitle">लोकप्रिय टूल</h2></div><select id="sort" aria-label="क्रम"><option value="featured">लोकप्रिय पहले</option><option value="az">नाम A–Z</option><option value="category">कैटेगरी</option></select></div><div id="empty" class="empty" hidden><div>⌕</div><h2>कोई टूल नहीं मिला</h2><p>दूसरे शब्द से खोजें या “सभी” कैटेगरी चुनें।</p><button id="clearBtn" type="button">खोज साफ करें</button></div><div id="toolGrid" class="tool-grid"></div><button id="loadMore" class="load-more" type="button">और टूल दिखाएँ</button></section>
+  </main>
+  <footer><div class="footer-brand"><span class="logo">A</span><div><b>Akash CSC Tools</b><small>आपके डिजिटल सेवा केंद्र का साथी</small></div></div><p>महत्वपूर्ण: सरकारी वेबसाइट पर अपनी जानकारी भरने से पहले URL अवश्य जाँचें। यह app किसी सरकारी विभाग का आधिकारिक app नहीं है।</p><small>© 2026 Akash CSC Tools • Made for CSC VLEs</small></footer>
+  <dialog id="toolDialog" class="tool-dialog">
+    <div class="dialog-head"><div><small id="dialogCategory"></small><h2 id="dialogTitle"></h2></div><button id="dialogClose" type="button" aria-label="बंद करें">×</button></div>
+    <div id="dialogBody" class="dialog-body"></div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/vendor/pdf-lib.min.js"></script>
+  <script src="assets/vendor/qrcode.min.js"></script>
+  <script src="assets/vendor/jsbarcode.min.js"></script>
+  <script src="assets/local-app.js"></script>
+</body>
+</html>
